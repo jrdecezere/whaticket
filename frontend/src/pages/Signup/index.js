@@ -119,7 +119,7 @@ const SignUp = () => {
 			<CssBaseline />
 			<div className={classes.paper}>
 				<div>
-					<img style={{ margin: "0 auto", height: "80px", width: "100%" }} src={logo} alt="Whats" />
+					<img style={{ margin: "0 auto", height: "100%", width: "100%" }} src={logo} alt="logo" />
 				</div>
 				<Typography component="h1" variant="h5">
 					{i18n.t("signup.title")}
@@ -195,7 +195,7 @@ const SignUp = () => {
 									>
 										{plans.map((plan, key) => (
 											<MenuItem key={key} value={plan.id}>
-												{plan.name} - Atendentes: {plan.users} - WhatsApp: {plan.connections} - Filas: {plan.queues} - R$ {plan.value}
+												{plan.name}: R$ {plan.value} mensal -- Atendentes: {plan.users} - Conexões WhatsApp: {plan.connections} - Filas: {plan.queues} 
 											</MenuItem>
 										))}
 									</Field>
